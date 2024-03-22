@@ -16,11 +16,11 @@ class QuizInterface:
         self.score_label.config(text=f"Score: {self.quiz.score}", bg=THEME_COLOR)
         self.score_label.grid(row=0, column=1)
 
-        true_img = PhotoImage(file="./images/true.png")
+        true_img = PhotoImage(file="true.png")
         self.true_btn = Button(image=true_img, highlightthickness=0, command=self.true_pressed)
         self.true_btn.grid(row=2, column=0)
 
-        false_img = PhotoImage(file="./images/false.png")
+        false_img = PhotoImage(file="false.png")
         self.false_btn = Button(image=false_img, highlightthickness=0, command=self.false_pressed)
         self.false_btn.grid(row=2, column=1)
     
